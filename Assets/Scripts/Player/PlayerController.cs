@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
         y *= Time.deltaTime;
         Vector3 plaDir = new Vector3(0, body.rotation.eulerAngles.y, transform.parent.rotation.eulerAngles.z);
         Vector3 velocity = Quaternion.Euler(plaDir) * (new Vector3(x, 0, z));
-        rb.AddForce(new Vector3(0, y, 0));
+        rb.AddForce(new Vector3(0, y * -gravity, 0));
         this.transform.parent.position += velocity;
     }
     private void Mouse()
