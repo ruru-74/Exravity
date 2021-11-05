@@ -1,0 +1,5 @@
+for the other maps use the texture maps from the Handrail
+
+Tiling
+X:10
+Y:10
